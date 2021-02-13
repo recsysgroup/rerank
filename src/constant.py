@@ -1,0 +1,60 @@
+TASK_TYPE_TRAIN = 'train'
+TASK_TYPE_PREDICT = 'predict'
+TASK_TYPE_USER_EMBEDDING = 'user_embedding'
+TASK_TYPE_ITEM_EMBEDDING = 'item_embedding'
+TASK_TYPE_CONTEXT_EMBEDDING = 'context_embedding'
+TASK_TYPE_EXPORT = 'export'
+TASK_TYPE_DEBUG = 'debug'
+
+BIZ_NAME = 'biz_name'
+
+CONFIG_COLUMNS = 'columns'
+CONFIG_COLUMNS_NAME = 'name'
+CONFIG_COLUMNS_TYPE = 'type'
+
+CONFIG_FEATURE_NAME = 'name'
+CONFIG_FEATURE_LAYERS = 'layers'
+CONFIG_FEATURE_LAYERS_TYPE = 'type'
+
+CONFIG_COLUMNS_TYPE_SINGLE = 'single'
+CONFIG_COLUMNS_TYPE_SEQ = 'seq'
+CONFIG_COLUMNS_TYPE_DENSE = 'dense'
+CONFIG_COLUMNS_TYPE_SEQ_DENSE = 'seq_dense'
+CONFIG_COLUMNS_TYPE_DENSE_SIZE = 'size'
+
+CONFIG_INPUT_CLOUMNS_RANK_EXTRA_INFO = "rank_extra_info"
+
+CONFIG_LOSS = 'loss'
+CONFIG_LOSS_NAME = 'name'
+
+CONFIG_EVALS = 'evals'
+CONFIG_EVALS_NAME = 'name'
+
+CONFIG_INPUT_LABEL = 'label'
+CONFIG_INPUT_USER = '__user__'
+CONFIG_INPUT_ITEM = '__item__'
+CONFIG_INPUT_POINT_FEATURES = 'point_features'
+CONFIG_INPUT_PAIR_FEATURES = 'pair_features'
+CONFIG_INPUT_POS_FEATURES = 'pos_features'
+CONFIG_INPUT_NEG_FEATURES = 'neg_features'
+
+CONFIG_TRAIN_BATCH_SIZE = 'train_batch_size'
+CONFIG_EVAL_BATCH_SIZE = 'eval_batch_size'
+CONFIG_PREDICT_BATCH_SIZE = 'predict_batch_size'
+CONFIG_EVAL_BATCH_NUM = 'eval_batch_num'
+
+CONFIG_AGGREGATORS = 'aggregators'
+CONFIG_AGGREGATORS_TYPE = 'type'
+CONFIG_SIMILARITY = 'similarity'
+CONFIG_SIMILARITY_TYPE = 'type'
+
+CONFIG_GLOBAL_TRAINING = '__training__'
+CONFIG_GLOBAL_CONFIG = '__config__'
+CONFIG_GLOBAL_FEATURE_NAME = '__feature_name__'
+CONFIG_GLOBAL_FEATURE_SIDE = '__feature_side__'
+
+CONFIG_SAVE_CHECKPOINTS_STEPS = 'save_checkpoints_steps'
+
+NUM_PARALLEL_CALLS = 96
+
+CONFIG_CONTEXT = 'false'

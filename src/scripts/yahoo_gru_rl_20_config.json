@@ -1,0 +1,58 @@
+{
+  "columns": [
+    {
+      "name": "list:qid",
+      "type": "single"
+    },
+    {
+      "name": "list:seq_len",
+      "type": "single"
+    },
+    {
+      "name": "label:ratings",
+      "type": "seq",
+      "seq_len": 20,
+      "need_mask": true
+    },
+    {
+      "name": "label:clicks",
+      "type": "seq",
+      "seq_len": 20,
+      "need_mask": true
+    },
+    {
+      "name": "label:bounces",
+      "type": "seq",
+      "seq_len": 20,
+      "need_mask": true
+    },
+    {
+      "name": "list:features",
+      "type": "seq_dense",
+      "seq_len": 20,
+      "dim": 699,
+      "need_mask": true
+    }
+  ],
+  "eval_hooks": "eval_ctr_map.EvalHook",
+  "rank_size": 20,
+  "pretrain": false,
+  "train_batch_size": 16,
+  "eval_batch_size": 16,
+  "predict_batch_size": 128,
+  "eval_batch_num": 2,
+  "optimal": false,
+  "policy_network": "yahoo_gru_pointnet_rl",
+  "simulator_network": "yahoo_gru_trans_ctr",
+  "trainer": "train_yahoo_with_rl",
+  "evaluator": "clicks_eval",
+  "num_train_steps": 1000000,
+  "max_eval_steps": 1000,
+  "save_checkpoints_steps": 1000,
+  "hash_bucket": 5000000,
+  "init_learning_rate": 1e-3,
+  "use_decay_learning_rate": 0,
+  "decay_steps": 100,
+  "decay_rate": 0.99,
+  "embedding_size": 64
+}
