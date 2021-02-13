@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from trainers.train_yahoo_with_ppo import Reinforce
+from trainers.train_yahoo_with_rl import Reinforce
 import numpy as np
 import tensorflow as tf
 import rerank_baseline.utils as re_utils
