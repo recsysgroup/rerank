@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 import tensorflow as tf
-import constant as C
 import numpy as np
-from policy_network import fm_with_gru
-from utils import get_assignment_map_from_checkpoint
-import math
 import rerank_baseline.utils as re_utils
 from common import cal_view_deep, cal_click_num, cal_expection, cal_map
 
